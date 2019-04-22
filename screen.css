@@ -116,7 +116,7 @@ ul {
 }
 
 /* Overrides for non-mobile */
-@media only screen and (min-width: 800px)
+@media only screen and (min-width: 900px)
 {
   body {
     width: 800px;
@@ -128,7 +128,7 @@ ul {
 }
 
 /* Need to adjust the calibration to the side */
-@media only screen and (max-width: 799px)
+@media only screen and (max-width: 899px)
 {
   .front_page div:nth-child(5) {
     grid-column: 1 / span 2;
