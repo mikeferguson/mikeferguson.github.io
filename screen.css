@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 800px;
+  width: 400px;
   margin: auto;
 }
 
@@ -43,9 +43,8 @@ body {
 }
 
 .front_page {
-  width: 800px;
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: 200px 200px;
 }
 .front_page a {
   color: #FFF;
@@ -114,4 +113,25 @@ ul {
   font-weight: bold;
   text-align: center;
   padding: 10px 0 10px 0;
+}
+
+/* Overrides for non-mobile */
+@media only screen and (min-width: 800px)
+{
+  body {
+    width: 800px;
+  }
+
+  .front_page {
+    grid-template-columns: 200px 200px 200px 200px;
+  }
+}
+
+/* Need to adjust the calibration to the side */
+@media only screen and (max-width: 799px)
+{
+  .front_page div:nth-child(5) {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    }x
 }
