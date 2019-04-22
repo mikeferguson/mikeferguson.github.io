@@ -2,9 +2,196 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138679579-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-138679579-1');
+  </script>
   <title>Michael Ferguson</title>
+  <meta name="description" content="I make robots do stuff, sometimes the things they do are even interesting. I have extensive experience in designing and working with the electronics, controls, sensors, perception and planning required to bring robotic hardware to life." >
+  <link rel="stylesheet" media="screen" type="text/css" href="fergs.css" >
 </head>
 <body>
-Test Page
+
+<div>
+  <a class="menu" href="https://www.linkedin.com/in/mfergs/"><img src="icons/linkedin.png" height="30"></a>
+  <a class="menu" href="https://www.twitter.com/therealfergs"><img src="icons/twitter.png" height="30"></a>
+  <a class="menu" href="https://www.instagram.com/therealfergs"><img src="icons/instagram.png" height="30"></a>
+  <a class="menu" href="https://github.com/mikeferguson"><img src="icons/github.png" height="30"></a>
+  <a class="menu" href="http://www.showusyoursensors.com">Blog</a>
+  <a class="menu" href="about.html">About</a>
+</div>
+<div class="header">
+  <p class="header_title"><a href="index.html">Michael Ferguson</a></p>
+  <p class="header_subtitle">Roboticist, etc.</p>
+</div>
+
+<div class="header_bar">
+</div>
+
+<div class="front_page">
+  <div class="front_page_wrap_h" >
+    <img class="front_page_img" src="img/fetch.jpg" />
+    <p class="front_page_desc" style="background: #09F; color: #fff;">
+    <b>Fetch Robotics</b> (2014-2017)<br>
+    <br>
+    As CTO, I led the design and implementation of software and electronics
+    for Fetch and Freight robots. These platforms won the Material Handling
+    Institute (MHI) Best New Innovation Award at MODEX 2016.<br>
+    <br>
+    I was a major contributor to a number of software milestones including
+    the development of key firmware components, secure bootloaders, hand-eye
+    calibration, and high-level demonistrations of mobility and manipulation
+    that are still part of the research product.
+    </p>
+  </div>
+
+  <div class="front_page_wrap_v">
+    <img class="front_page_img" src="img/ubr1.jpg" />
+    <p class="front_page_desc" style="background: #F90; color: #fff;">
+    <b>Unbounded Robotics</b> (2013-2014)<br>
+    <br>
+    As CTO, I led the design of the software and electrical system of the
+    UBR-1 robot platform.<br>
+    <br>
+    Unbounded didn't make it past the seed round, but we did release
+    some code on <a href="https://github.com/unboundedrobotics">GitHub</a>.
+    </p>
+  </div>
+
+  <div class="front_page_wrap_v">
+    <img class="front_page_img" src="img/maxwell.jpg" />
+    <p class="front_page_desc" style="background: #333; color: #fff;">
+    <b>Maxwell</b> (2010)<br>
+    <br>
+    Maxwell is a low-cost mobile manipulator I built as part of my master's thesis.
+    The robot uses a number of off-the-shelf components along with the ArbotiX ROS
+    drivers. He competed in the 2011 AAAI Small Scall Manipulation Challenge and
+    won first place. I've made a
+    <a href="http://www.showusyoursensors.com/search/label/Maxwell">number of blog posts</a> detailing Maxwell.
+    </p>
+  </div>
+
+  <div class="front_page_wrap_v">
+    <img class="front_page_img" src="img/minimax.jpg" />
+    <p class="front_page_desc" style="background: #333; color: #fff;">
+    <b>Mini Max</b> (2011)<br>
+    <br>
+    A miniature version of Maxwell. A set of these were built for Siena
+    College. The arm eventually became the "Turtlebot Arm".
+    </p>
+  </div>
+
+  <div class="front_page_wrap_h" style="grid-column: 2 / span 2;">
+    <img class="front_page_img" src="img/calibration.jpg"/>
+    <p class="front_page_desc" style="background: #F00; color: #fff;">
+    <b>Calibration</b><br>
+    <br>
+    Calibration has been an interest of mine for some time. While at Willow
+    Garage I worked on a generic port of the pr2_calibration stack, making
+    it easier for many robots to find their arms. The
+    <a href="http://ros.org/wiki/calibration">calibration</a>
+    stack has been used on robots ranging from Maxwell, to PR2, to robots as
+    part of the ROS-Industrial project.<br>
+    <br>
+    While at Unbounded Robotics and Fetch Robotics, I worked on a completely new
+    <a href="https://github.com/mikeferguson/robot_calibration">robot_calibration</a>
+    project. This new system is significantly faster and more robust.
+    </p>
+  </div>
+
+  <div class="front_page_wrap_v">
+    <img class="front_page_img" src="img/prmini.jpg" />
+    <p class="front_page_desc" style="background: #F90; color: #fff;">
+    <b>PR-MINI</b> (2010)<br>
+    <br>
+    The overly complex predecessor to Maxwell. Designed as a 60% scale version
+    of the PR2 using Dynamixel servos. See more in
+    <a href="http://www.showusyoursensors.com/2013/04/blast-from-past-pr-mini.html">this blog post</a>.
+    </p>
+  </div>
+
+  <div class="front_page_wrap_h">
+    <img class="front_page_img" src="img/smaldog.jpg" />
+    <p class="front_page_desc" style="background: #F00; color: #fff;">
+    <b>SMALdog</b> (2009-2014)<br>
+    <br>SMALdog is "Sorta-Maybe-Almost-Littledog", a small walking robot platform.
+    The original version used the Arbotix and was able do simple things like
+    <a href="http://www.youtube.com/watch?v=TKs31nOf8pY">jump</a>.
+    A later version has been developed using my Ethbridge board and ROS. The
+    code I developed is on <a href="https://github.com/mikeferguson/smaldog">GitHub</a>.
+    </p>
+  </div>
+
+  <div class="front_page_wrap_v">
+    <img class="front_page_img" src="img/xrb3.jpg" />
+    <p class="front_page_desc" style="background: #080; color: #fff;">
+    <b>XR-B3</b> (2008)<br>
+    <br>
+    Xr-B3 was my last table-top sized mapping robot. The small memory size (2k of ram)
+    required the metric map be only be a small rolling window (about 6ft x 6ft). A
+    topological map was then extracted from the metric map. The sensor update algorithm
+    was based on Histogram In-Motion Mapping (HIMM).
+    </p>
+  </div>
+
+  <div class="front_page_wrap_v">
+    <img class="front_page_img" src="img/armadillo.jpg" />
+    <p class="front_page_desc" style="background: #333; color: #fff;">
+    <b>Armadillo</b> (2010)<br>
+    <br>
+    The Armadillo was a short-lived ArbotiX-based mobile manipulator. It's
+    small base weventually was upsized into Maxwell. The ArbotiX-ROS interface
+    code eventually became the basis of the modern
+    <a href="http://github.com/vanadiumlabs/arbotix_ros"> Arbotix ROS wrappers</a>.
+    While Armadillo never did much manipulation, it
+    <a href="http://www.showusyoursensors.com/2010/11/armadillo-goes-mapping.html">
+    produce a number of maps</a>.
+    </p>
+  </div>
+
+  <div class="front_page_wrap_h">
+    <img class="front_page_img" src="img/crater.jpg" />
+    <p class="front_page_desc" style="background: #F90; color: #fff;">
+    <b>Crater</b> (2009)<br>
+    <br>
+    This stupid little $118 robot is the prime example of why you should <i>Keep It Simple Stupid</i>.
+    Intended only to compete in the "low-cost award" category, Crater won the Non-Kit Senior Division
+    at the 2009 Trinity College Fire Fighting Home Robot Contest. See more in
+    <a href="http://www.showusyoursensors.com/2009/04/viva-la-crate.html">this blog post</a>,
+    <a href="https://github.com/mikeferguson/crater">code on github</a>, and 
+    <a href="http://forums.trossenrobotics.com/tutorials/build-articles-130/build-a-fire-fighting-robot-3288/">tutorials</a>
+    I wrote.
+    </p>
+  </div>
+
+  <div class="front_page_wrap_h">
+    <img class="front_page_img" src="img/issy.jpg" />
+    <p class="front_page_desc" style="background: #F00; color: #fff;">
+    <b>Issy</b> (2009-2011)<br>
+    <br>
+    Issy was a small walking robot, with numerous configurations over time.
+    Issy was built around the original ArbotiX robocontroller and won Gold
+    in the first Mech Warfare in 2009 and first place in the 2009 Canadian
+    National Robot Games Walker Challenge. Versions of Issy participated in
+    everything from Fire Fighting Contests to Mech Warfare. There are a number of
+    <a href="http://www.showusyoursensors.com/search/label/issy">blog</a> posts
+    on the many versions of Issy.<br>
+    <br>
+    My later focus with Issy was on dynamic gaits, dynamic balance, and terrain
+    adaptation of walking gaits. The feet were outfitted with FSR sensors, and
+    an IMU was integrated.
+    </p>
+  </div>
+
+</div> <!--front_page-->
+
+<div class="footer">
+Copyright 2019 Michael Ferguson
+</div>
+
 </body>
 </html>
